@@ -23,7 +23,7 @@
   -->
 
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-	package="com.overgrownpixel.overgrownpixeldungeon"
+	package="com.overgrownpixel.survivalpixeldungeon"
 	android:versionCode="328"
 	android:versionName="0.0.3"
 	android:installLocation="auto">
@@ -52,7 +52,8 @@
 			android:alwaysRetainTaskState="true"
 			android:launchMode="singleInstance"
 			android:configChanges="keyboardHidden|orientation|screenSize|smallestScreenSize|screenLayout"
-			android:screenOrientation="nosensor">
+			android:screenOrientation="nosensor"
+			android:exported="true">
 			<intent-filter >
 				<action android:name="android.intent.action.MAIN" />
 				<category android:name="android.intent.category.LAUNCHER" />

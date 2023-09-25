@@ -24,12 +24,12 @@
 apply plugin: 'com.android.application'
 
 android {
-    compileSdkVersion 28
+    compileSdkVersion 33
 
     defaultConfig {
         resConfigs "en_US", "de"
         minSdkVersion 8
-        targetSdkVersion 28
+        targetSdkVersion 33
     }
 
     buildTypes {
@@ -49,6 +49,6 @@ dependencies {
     implementation project(':SPD-classes')
     repositories {
         google()
-        jcenter()
+        mavenCentral()
     }
 }
