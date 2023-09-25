@@ -6,6 +6,7 @@
 *.so
 # Java class files
 *.class
+*.smali
 
 # Gradle build files
 .gradle/

@@ -189,9 +189,40 @@ public class ChangesScene extends PixelScene {
 		add( list );
 
         //**********************
+        //       v0.0.3
+        //**********************
+        ChangeInfo changes = new ChangeInfo("v0.0.3", true, "");
+        changes.hardlight( Window.TITLE_COLOR );
+        infos.add(changes);
+
+        changes = new ChangeInfo("新内容", false, null);
+        changes.hardlight( Window.SHPX_COLOR );
+        infos.add(changes);
+
+        changes.addButton( new ChangeButton( Icons.get(Icons.INFO), "生存地牢-v0.3.1更新计划",
+                "_-_ Luna在一年前活跃过，这代表他还在。\n\n生存地牢会进行Luna的一些Todo List开发\n\n" +
+                        "警告：由于没有真实的源代码，一切开发属于逆向进行。辅助使用OGPD0.2源代码开发。\n\n" +
+                        "因此该版本更新比较缓慢，我也会积极和Luna沟通。"));
+
+        changes.addButton( new ChangeButton( Icons.get(Icons.PREFS), "补丁修复",
+                "_-_ 1.为生存地牢添加崩溃界面，由于该地牢并非我自己的地牢，且我在尽力联系作者复更。\n\n" +
+                        "但生存地牢也是让我入坑的另一个佳作，所以我会尽量修复它的错误，以及添加更多原作者的WIP。\n\n" +
+                        "_-_ 2.对生存地牢进行了一些素材优化。\n\n" +
+                        "_-_ 3.去掉了开局弹窗，安卓12以上可以使用了。"));
+
+        changes = new ChangeInfo("警告", false, null);
+        changes.hardlight( 0xff0000 );
+        infos.add(changes);
+
+        changes.addButton( new ChangeButton( Icons.get(Icons.WARNING), "食人鱼压力板",
+                "_-_ 目前这里有bug，我正在尝试修复。\n\n" +
+                        "请不要作死用放大镜查看它们。否则可能存档丢失\n\n" +
+                        "即便要告诉我错误，请保存一次存档再去用放大镜"));
+
+        //**********************
         //       v0.0.2
         //**********************
-        ChangeInfo changes = new ChangeInfo("v0.0.2", true, "This Update contains mainly bug fixes, rebalancing");
+        changes = new ChangeInfo("v0.0.2", true, "This Update contains mainly bug fixes, rebalancing");
         changes.hardlight( Window.TITLE_COLOR );
         infos.add(changes);
 
